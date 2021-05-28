@@ -27,10 +27,9 @@ class _TransactionFormState extends State<TransactionForm> {
   }
 
   Widget build(BuildContext context) {
-    return Card(
-      elevation: 5,
-      child: Padding(
-        padding: const EdgeInsets.all(10),
+    return SingleChildScrollView(
+          child: Card(
+        elevation: 5,
         child: Column(
           children: [
             TextField(
@@ -48,11 +47,12 @@ class _TransactionFormState extends State<TransactionForm> {
                 labelText: 'Valor (R\$)',
               ),
             ),
+            
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(3.0),
+                  padding: const EdgeInsets.all(0),
                   child: ElevatedButton(
                     child: Text('Nova Transação'),
                     onPressed: _submitForm,

@@ -60,9 +60,9 @@ class TransationList extends StatelessWidget {
                             tr.title,
                             style: Theme.of(context).textTheme.headline6,
                             /* style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black), */
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black), */
                           ),
                           Text(
                             DateFormat('d MMM y').format(tr.date),
